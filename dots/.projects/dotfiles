@@ -1,10 +1,6 @@
 # open project using `dots` or `dotfiles` command
 
-dotfiles(){
-    cd ~/git/pers/dotfiles
-    code .
-}
-
+alias dotfiles="cd ~/git/pers/dotfiles; code .;"
 alias dots=dotfiles
 
 # open specific settings
