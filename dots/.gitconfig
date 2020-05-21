@@ -1,0 +1,32 @@
+[user]
+	email = tom.knapen@two-point-o.be
+	name = Tom Knapen
+[merge]
+	tool = kdiff3
+[diff]
+	guitool = kdiff3
+[alias]
+	s = status
+	c = !git add -A && git commit -m
+	pull = pull
+	push = push
+	pfl = push --force-with-lease
+	f = fetch
+	r = "!f() { git rebase -i origin/$1; } ; f"
+	rm = rebase -i origin/master
+	fr = "!f() { git fetch && git rebase -i origin/$1; } ; f"
+	frm = !git fetch && git rebase -i origin/master
+	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
+[rerere]
+	enabled = 1
+[core]
+	editor = nano
+	excludesfile = /Users/tom/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
+[commit]
+	template = /Users/tom/.stCommitMsg

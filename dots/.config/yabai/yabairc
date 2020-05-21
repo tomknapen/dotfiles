@@ -1,0 +1,27 @@
+# ===== variables =====
+
+gaps="8"
+padding="8"
+
+normal_border_color="010101"
+focused_border_color="808080"
+preselect_border_color="2d74da"
+
+# =====================
+
+# bsp or float (default: bsp)
+yabai -m config layout bsp
+
+# New window spawns to the right if vertical split, or bottom if horizontal split
+yabai -m config window_placement second_child
+
+# Set all padding and gaps to x pt (default: 0)
+yabai -m config top_padding    "${padding}"
+yabai -m config left_padding   "${padding}"
+yabai -m config right_padding  "${padding}"
+yabai -m config bottom_padding "${padding}"
+yabai -m config window_gap     "${gaps}"
+
+# Window opacity (default: off)
+# Keep it at off: https://github.com/koekeishiya/yabai/issues/275
+yabai -m config window_opacity off 
