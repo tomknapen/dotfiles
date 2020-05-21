@@ -1,4 +1,14 @@
+# open project using `dots` or `dotfiles` command
+
 dotfiles(){
     cd ~/git/pers/dotfiles
     code .
 }
+
+alias dots=dotfiles
+
+# open specific settings
+
+alias zshrc="dotfiles;code ./dots/.zshrc;"
+alias skhdrc="dotfiles;code ./dots/.config/skhd/skhdrc;"
+alias yabairc="dotfiles;code ./dots/.config/yabai/yabairc;"

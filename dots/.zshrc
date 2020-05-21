@@ -46,5 +46,5 @@ RPROMPT='$(__posh_git_echo)'
 
 ### projects ###
 
-. .projects/dotfiles
-. .projects/century21
+. ~/.projects/dotfiles
+. ~/.projects/century21
