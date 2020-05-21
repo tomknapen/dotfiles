@@ -1,0 +1,4 @@
+dotfiles(){
+    cd ~/git/pers/dotfiles
+    code .
+}
