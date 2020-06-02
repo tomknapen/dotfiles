@@ -1,2 +1,32 @@
 # load secrets
 . ~/.project-secrets/century21
+
+# c21 repos
+c21cl() {
+    cd ~/git/c21/c21-component-library;
+    nvm use
+    . ./bin/init
+    code .
+}
+
+c21fc() {
+    cd ~/git/c21/c21-frontend-channel;
+    nvm use
+    . ./bin/init
+    code .
+}
+
+#dgp repos (for reference)
+c21cl() {
+    cd ~/git/dgp/2po-dgp-components;
+    nvm use
+    . ./bin/init
+    code .
+}
+
+dgpfc() {
+    cd ~/git/dgp/2po-dgp-front-channel;
+    nvm use
+    . ./bin/init
+    code .
+}
