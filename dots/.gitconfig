@@ -14,6 +14,7 @@
 	f = fetch
 	r = "!f() { git rebase -i origin/$1; } ; f"
 	rm = rebase -i origin/master
+	rd = rebase -i origin/master
 	fr = "!f() { git fetch && git rebase -i origin/$1; } ; f"
 	frm = !git fetch && git rebase -i origin/master
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
