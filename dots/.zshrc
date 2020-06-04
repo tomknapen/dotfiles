@@ -4,6 +4,8 @@ export ZSH="/Users/tom/.oh-my-zsh"
 
 ZSH_THEME="gozilla"
 
+#For full path in theme, change the '%c' in PROMPT to '%d' (full path) or '%~' (home dir replaced by ~)
+
 plugins=(
 	git
 	nvm
