@@ -17,6 +17,7 @@
 	rd = rebase -i origin/develop
 	fr = "!f() { git fetch && git rebase -i origin/$1; } ; f"
 	frm = !git fetch && git rebase -i origin/master
+	frd = !git fetch && git rebase -i origin/develop
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 [rerere]
 	enabled = 1
