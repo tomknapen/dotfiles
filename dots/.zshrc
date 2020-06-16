@@ -11,7 +11,9 @@ plugins=(
 
 source $ZSH/oh-my-zsh.sh
 
-
+alias .z=". ~/.zshrc"
+alias .zsh=". ~/.zshrc"
+alias .zshrc=". ~/.zshrc"
 
 ### nvm ###
 
@@ -45,6 +47,10 @@ RPROMPT='$(__posh_git_echo)'
 
 
 ### projects ###
+
+alias .init=". ./bin/init"
+alias .bi=". ./bin/init"
+alias .bininit=". ./bin/init"
 
 . ~/.projects/dotfiles
 . ~/.projects/century21

@@ -11,13 +11,19 @@
 	pull = pull
 	push = push
 	pfl = push --force-with-lease
-	f = fetch
+	
 	r = "!f() { git rebase -i origin/$1; } ; f"
 	rm = rebase -i origin/master
 	rd = rebase -i origin/develop
+	rc = !git rebase --continue
+	
+	f = fetch
 	fr = "!f() { git fetch && git rebase -i origin/$1; } ; f"
 	frm = !git fetch && git rebase -i origin/master
 	frd = !git fetch && git rebase -i origin/develop
+
+	mt = mergetool
+
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
 [rerere]
 	enabled = 1

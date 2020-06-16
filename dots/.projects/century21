@@ -17,7 +17,7 @@ c21fc() {
 }
 
 #dgp repos (for reference)
-c21cl() {
+dgpcl() {
     cd ~/git/dgp/2po-dgp-components;
     nvm use
     . ./bin/init
