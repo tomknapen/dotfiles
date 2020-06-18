@@ -38,3 +38,5 @@
 	trustExitCode = true
 [commit]
 	template = /Users/tom/.stCommitMsg
+[mergetool]
+	keepBackup = false
