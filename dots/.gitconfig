@@ -11,6 +11,9 @@
 	pull = pull
 	push = push
 	pfl = push --force-with-lease
+
+	co = checkout 
+	cob = checkout -b
 	
 	r = "!f() { git rebase -i origin/$1; } ; f"
 	rm = rebase -i origin/master
