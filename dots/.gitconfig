@@ -14,11 +14,14 @@
 
 	co = checkout 
 	cob = checkout -b
+	cod = checkout develop
+	com = checkout master
 	
 	r = "!f() { git rebase -i origin/$1; } ; f"
 	rm = rebase -i origin/master
-	rd = rebase -i origin/develop
+	rd = rebase -i origin/developcd 
 	rc = !git rebase --continue
+	ra = !git rebase --abort
 	
 	f = fetch
 	fr = "!f() { git fetch && git rebase -i origin/$1; } ; f"
@@ -43,3 +46,5 @@
 	template = /Users/tom/.stCommitMsg
 [mergetool]
 	keepBackup = false
+[sequence]
+	editor = interactive-rebase-tool
