@@ -28,6 +28,9 @@
 	frm = !git fetch && git rebase -i origin/master
 	frd = !git fetch && git rebase -i origin/develop
 
+	rh = reset --hard
+	rs = reset --soft
+
 	mt = mergetool
 
 	alias = ! git config --get-regexp ^alias\\. | sed -e s/^alias\\.// -e s/\\ /\\ =\\ /
