@@ -14,12 +14,13 @@
 
 	co = checkout 
 	cob = checkout -b
+	coa = checkout acceptance
 	cod = checkout develop
 	com = checkout master
 	
 	r = "!f() { git rebase -i origin/$1; } ; f"
 	rm = rebase -i origin/master
-	rd = rebase -i origin/developcd 
+	rd = rebase -i origin/develop
 	rc = !git rebase --continue
 	ra = !git rebase --abort
 	
