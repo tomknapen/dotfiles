@@ -22,7 +22,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # This loads nvm bash_completion
 
 
-
 ### git autocompletion ###
 
 __get_all_git_aliases ()
@@ -38,12 +37,17 @@ for al in `__get_all_git_aliases`; do
 done
 
 
-
 ### posh git terminal ###
 
 . ~/git/util/posh-git-sh/git-prompt.sh
 RPROMPT='$(__posh_git_echo)'
 
+
+### autocompletion ###
+
+autoload -U +X bashcompinit && bashcompinit
+complete -o nospace -C /usr/local/bin/terraform terraform
+source /usr/local/etc/bash_completion.d/az
 
 
 ### projects ###
