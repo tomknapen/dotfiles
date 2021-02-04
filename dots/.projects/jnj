@@ -1,0 +1,5 @@
+# load secrets
+. ~/.project-secrets/jnj
+
+# Command to start with different env file
+# ENC_ENV_FILE=../../environment_configs/jmc/.env.com.preview.aes yarn start

@@ -15,6 +15,12 @@ alias .z=". ~/.zshrc"
 alias .zsh=". ~/.zshrc"
 alias .zshrc=". ~/.zshrc"
 
+### skhd ###
+
+# find process that enabled secure input, which causes the `skhd` command to fail:
+# ioreg -l -w 0 | perl -nle 'print $1 if /"kCGSSessionSecureInputPID"=(\d+)/' | uniq | xargs -I{} ps -p {} -o comm=
+# if login screen -> lock pc, log in through providing password instead of fingerprint
+
 ### nvm ###
 
 export NVM_DIR="$HOME/.nvm"
@@ -57,4 +63,4 @@ alias .bi=". ./bin/init"
 alias .bininit=". ./bin/init"
 
 . ~/.projects/dotfiles
-. ~/.projects/century21
+. ~/.projects/jnj
