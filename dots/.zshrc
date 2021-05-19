@@ -59,8 +59,7 @@ source /usr/local/etc/bash_completion.d/az
 ### projects ###
 
 alias .init=". ./bin/init"
-alias .bi=". ./bin/init"
-alias .bininit=". ./bin/init"
 
 . ~/.projects/dotfiles
-. ~/.projects/jnj
+#. ~/.projects/jnj
+. ~/.projects/century21
