@@ -62,4 +62,5 @@ alias .init=". ./bin/init"
 
 . ~/.projects/dotfiles
 #. ~/.projects/jnj
-. ~/.projects/century21
+# . ~/.projects/century21
+. ~/.projects/dgp

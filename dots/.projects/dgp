@@ -1,0 +1,6 @@
+# In the dgp project, the develop branch is called development. Fixing the git alias for dgp
+
+echo 'WARNING: the `gfrd` alias is being overwritten to use the `development` branch instead of the `develop` branch for the DGP project'
+alias gfrd="gfr development"
+echo 'WARNING: the `gcod` alias is being overwritten to use the `development` branch instead of the `develop` branch for the DGP project'
+alias gcod="gco development"
