@@ -14,12 +14,17 @@
 
 	co = checkout 
 	cob = checkout -b
-	coa = checkout acceptance
-	cod = checkout develop
 	com = checkout master
+	cos = checkout staging
+	coa = checkout acceptance
+	cot = checkout test
+	cod = checkout develop
 	
 	r = "!f() { git rebase -i origin/$1; } ; f"
 	rm = rebase -i origin/master
+	rs = rebase -i origin/staging
+	ra = rebase -i origin/acceptance
+	rt = rebase -i origin/test
 	rd = rebase -i origin/develop
 	rc = !git rebase --continue
 	ra = !git rebase --abort
@@ -27,6 +32,9 @@
 	f = fetch
 	fr = "!f() { git fetch && git rebase -i origin/$1; } ; f"
 	frm = !git fetch && git rebase -i origin/master
+	frs = !git fetch && git rebase -i origin/staging
+	fra = !git fetch && git rebase -i origin/acceptance
+	frt = !git fetch && git rebase -i origin/test
 	frd = !git fetch && git rebase -i origin/develop
 
 	rh = reset --hard
