@@ -2,7 +2,9 @@
 
 export ZSH="/Users/tom/.oh-my-zsh"
 
-ZSH_THEME="gozilla" # For full path in prompt, go to theme file and change the '%c' in PROMPT to '%d' (full path) or '%~' (home dir replaced by ~)
+# For full path in prompt, go to theme file and change the '%c' in PROMPT to '%d' (full path) or '%~' (home dir replaced by ~)
+# Theme files can be found at ~/.oh-my-zsh/themes
+ZSH_THEME="gozilla" 
 
 plugins=(
 	git
