@@ -7,7 +7,7 @@
 	guitool = kdiff3
 [alias]
 	s = status
-	c = !git add -A && git commit -m
+	cm = !git add -A && git commit -m
 	pull = pull
 	push = push
 	pfl = push --force-with-lease
@@ -54,9 +54,8 @@
 [mergetool "sourcetree"]
 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
 	trustExitCode = true
-[commit]
-	template = /Users/tom/.stCommitMsg
 [mergetool]
 	keepBackup = false
 [sequence]
 	editor = interactive-rebase-tool
+	
