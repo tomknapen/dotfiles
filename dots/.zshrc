@@ -66,8 +66,8 @@ __git_commit_with_auto_message ()
 	# jira api token kjIiso2CTlaAbXXggROF6AEC
 	# jira basic auto token command: echo -n tom.knapen@two-point-o.be:kjIiso2CTlaAbXXggROF6AEC | base64
 	TICKET_URL="https://xploregroup.atlassian.net/rest/api/latest/issue/${TICKET_NUMBER}"
-	JIRA=$(curl --location --request GET ${TICKET_URL} \
-	--header 'Authorization: Basic dG9tLmtuYXBlbkB0d28tcG9pbnQtby5iZTpraklpc28yQ1RsYUFiWFhnZ1JPRjZBRUM=')
+
+	JIRA=$(curl --location --request GET ${TICKET_URL} --header $JIRA_XPLORE_AUTH_HEADER)
 	
 	# get ticket information from JIRA response
 	JIRA_SUMMARY=$(echo "$JIRA" | jq -r '.fields.summary')
@@ -115,6 +115,7 @@ source /usr/local/etc/bash_completion.d/az
 alias .init=". ./bin/init"
 
 . ~/.projects/dotfiles
+. ~/.projects/jira
 # . ~/.projects/jnj
 # . ~/.projects/century21
 # . ~/.projects/dgp
