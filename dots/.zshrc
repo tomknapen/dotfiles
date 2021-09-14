@@ -115,6 +115,6 @@ source /usr/local/etc/bash_completion.d/az
 alias .init=". ./bin/init"
 
 . ~/.projects/dotfiles
-#. ~/.projects/jnj
+# . ~/.projects/jnj
 # . ~/.projects/century21
-. ~/.projects/dgp
+# . ~/.projects/dgp

@@ -7,7 +7,7 @@
 	guitool = kdiff3
 [alias]
 	s = status
-	cm = !git add -A && git commit -m
+	cm = "!f() { git add -A && git commit -m \"$(echo $@)\"; } ; f"
 	pull = pull
 	push = push
 	pfl = push --force-with-lease
