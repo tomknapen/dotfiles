@@ -51,7 +51,7 @@ __git_commit_with_auto_message ()
 	if [ $1 ]
 		then COMMIT_MESSAGE="$COMMIT_MESSAGE  
 
-$1";
+\"$(echo $@)\"";
 	fi
 
 	# add all changes and commit with the auto generated message
