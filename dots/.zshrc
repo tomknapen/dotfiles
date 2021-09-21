@@ -23,6 +23,11 @@ alias .zshrc=". ~/.zshrc"
 # ioreg -l -w 0 | perl -nle 'print $1 if /"kCGSSessionSecureInputPID"=(\d+)/' | uniq | xargs -I{} ps -p {} -o comm=
 # if the culprit is login screen -> lock pc, log in through providing password instead of fingerprint
 
+### ssh ###
+
+# make sure all keys are available
+ssh-add -A 
+
 ### nvm ###
 
 export NVM_DIR="$HOME/.nvm"
