@@ -34,8 +34,8 @@ __git_commit_with_auto_message ()
 	JIRA=$(curl --location --request GET ${TICKET_URL} --header $JIRA_XPLORE_AUTH_HEADER)
 	
 	# get ticket information from JIRA response
-	JIRA_SUMMARY=$(echo "$JIRA" | jq -r '.fields.summary')
-	JIRA_KEY=$(echo "$JIRA" | jq -r '.key')
+	JIRA_SUMMARY=$(echo "$JIRA"| tr '\r\n' ' ' | jq -r '.fields.summary')
+	JIRA_KEY=$(echo "$JIRA"| tr '\r\n' ' ' | jq -r '.key')
 
 	# if no data could be fetched, report and abort
 	if [ -z "$TICKET_NUMBER" ]; 
